@@ -1,12 +1,7 @@
 import mongoose from "mongoose";
 
 const DbCon=async()=>{
-    try {
-        mongoose.connect("mongodb://localhost:27017/Notes_App")
-        console.log('Mongodb is connected')
-        
-    } catch (error) {
-        console.log("Error in mongodb connection",error)
-    }
+        await mongoose.connect("mongodb+srv://mohitgk7185:0Rar2uIbiblDtXv0@cluster0.dlf4r.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+        console.log('Mongodb is connected');
 }
 export default DbCon
