@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-    baseURL: 'https://notes-app-backend-e3h9.onrender.com',
+    baseURL: 'https://notes-app-2g3q.onrender.com',
     headers: {
         'Content-Type': 'application/json' // Removed extra space
     },
